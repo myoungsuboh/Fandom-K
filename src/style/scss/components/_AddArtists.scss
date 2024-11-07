@@ -1,0 +1,90 @@
+.favorite-list {
+  margin-top: 4rem;
+  .add-artists-wrap {
+    display: flex;
+    width: 120rem;
+    margin: 0 auto;
+    .add-artists-list {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 2.4rem;
+      width: 100%;
+      margin: 0 auto;
+      & + .add-artists-list {
+        margin-top: 3.2rem;
+      }
+      .add-artists-text {
+        margin-top: 0.8rem;
+        text-align: center;
+        .add-artists-name {
+          font-size: 1.6rem;
+          line-height: 2.8rem;
+          color: #f4efef;
+        }
+        .add-artists-group {
+          font-size: 1.4rem;
+          line-height: 1.67rem;
+          color: #ffffff99;
+        }
+      }
+      .profile-badge {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 25.5rem;
+  margin: 4.8rem auto 8rem;
+  padding: 1.1rem 0;
+  border-radius: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+@media (max-width: 1200px) {
+  .favorite-list {
+    .add-artists-wrap {
+      width: auto;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .add-artists-list {
+        gap: 2.4rem;
+      }
+    }
+  }
+  .add-button {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 744px) {
+  .favorite-list {
+    .profile-badge {
+      width: 9.8rem;
+      height: 9.8rem;
+      .profile-badge-img {
+        width: 8.8rem;
+        height: 8.8rem;
+      }
+      .selected {
+        width: 8.8rem;
+        height: 8.8rem;
+        img {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+  }
+  .add-button {
+    margin-top: 2.4rem;
+  }
+}

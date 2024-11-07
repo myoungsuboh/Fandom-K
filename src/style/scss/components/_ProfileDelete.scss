@@ -1,0 +1,45 @@
+.profile-delete {
+  position: absolute;
+  left: 70%;
+  bottom: 1.43%;
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-position: center;
+  border: 0.27rem solid #02000e;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+  }
+  .profile-delete-img {
+    position: absolute;
+    left: 23%;
+    top: 23%;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  &.medium {
+    width: 3rem;
+    height: 3rem;
+    .profile-delete-img {
+      position: absolute;
+      left: 20%;
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+  }
+
+  &.large {
+    width: 5rem;
+    height: 5rem;
+    .profile-delete-img {
+      position: absolute;
+      left: 28%;
+      top: 28%;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
