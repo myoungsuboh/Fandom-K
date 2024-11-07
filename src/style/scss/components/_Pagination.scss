@@ -1,0 +1,85 @@
+.pagination-container {
+  position: relative;
+  max-width: 136rem;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &.entire-favorite-artist {
+    margin-top: 7rem;
+  }
+
+  &.donation {
+    min-height: 46rem;
+  }
+
+  &.favorite-list {
+    min-height: 45.1rem;
+    .pagination-icon {
+      top: calc(50% + 2.9rem);
+    }
+    @media (max-width: 744px) {
+      min-height: 41rem;
+    }
+  }
+
+  .content-title {
+    max-width: 120rem;
+    margin: 0 auto 3.2rem;
+    color: var(--white);
+    font-size: 2.4rem;
+    font-weight: var(--bold);
+    line-height: 2.6rem;
+    @media (max-width: 1200px) {
+      font-size: 2rem;
+    }
+    @media (max-width: 744px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  .end-point {
+    width: 0.1rem;
+    height: 100%;
+  }
+
+  .pagination-icon {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 50%;
+    padding: 0;
+    background-color: transparent;
+    transform: translateY(-50%);
+
+    &.prev {
+      left: 0;
+    }
+
+    &.next {
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .pagination-container {
+    padding-left: 2.4rem;
+    &.entire-favorite-artist {
+      margin-top: 1.4rem;
+    }
+    .content-title {
+      font-size: 2rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+}
+
+@media (max-width: 744px) {
+  .pagination-container {
+    .content-title {
+      font-size: 1.6rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+}

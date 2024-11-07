@@ -1,0 +1,57 @@
+.entire-chart {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--rich-black);
+  .chart-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 2.4rem;
+    .chart-button-container {
+      display: flex;
+      .chart-title-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60rem;
+        height: auto;
+        padding: 1.2rem;
+        gap: 1.1rem;
+        border: none;
+        background: none;
+        &:hover {
+          cursor: pointer;
+          border-radius: 0.6rem;
+          color: rgba(255, 255, 255, 0.6);
+          background-color: rgba(255, 255, 255, 0.03);
+          box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba(255, 255, 255, 0.2);
+          transition: 0.5s;
+        }
+      }
+    }
+    .chart-title-btn.active {
+      cursor: pointer;
+      border-radius: 0.6rem;
+      color: var(--white);
+      background-color: rgba(255, 255, 255, 0.05);
+      box-shadow: inset 0.2rem 0.2rem 1rem 0.1rem rgba(20, 195, 254, 0.2);
+      border-bottom: solid 0.1rem rgba(255, 255, 255, 0.7);
+      transition: 0.5s;
+    }
+    .chart-title-btn-text {
+      font-weight: var(--normal);
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      color: var(--sonic-silver);
+    }
+  }
+}
+
+@media (max-width: 744px) {
+  .entire-chart {
+    .chart-content {
+      gap: 1.6rem;
+    }
+  }
+}

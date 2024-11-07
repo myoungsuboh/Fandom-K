@@ -1,0 +1,61 @@
+.chart-rank-content {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  border-radius: 0.8rem;
+  column-gap: 2.4rem;
+  background-color: var(--rich-black);
+  .artist-profile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    .artist-profile-ahead {
+      display: flex;
+      align-items: center;
+      min-width: 16.5rem;
+      width: 100%;
+      gap: 1.2rem;
+      .artist-rank {
+        display: flex;
+        font-weight: var(--normal);
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: var(--brand-orange);
+        opacity: 0.6;
+      }
+      .ranked-artist {
+        font-weight: var(--normal);
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: var(--white);
+      }
+    }
+    .total-votes {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      font-weight: var(--normal);
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: var(--white);
+      opacity: 0.6;
+    }
+  }
+  .artist-profile:nth-child(9) {
+    border-bottom: none;
+  }
+  .artist-profile:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 120rem) {
+  /*tablet*/
+  .chart-rank-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
